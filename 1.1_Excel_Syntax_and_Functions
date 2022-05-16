@@ -1,0 +1,33 @@
+# Background Information:  
+You are provided below with an Excel Spreadsheet that gives one year’s (2010) daily continually compounded returns for two chemical company stocks, Dow and Dupont, and the S&P 500, a weighted index of 500 large company stocks.
+
+#Problem Information:  
+1. Daily continuously compounded returns can be summed to obtain returns over longer time intervals. What is the Dow Chemical Annual return?
+   - =Sum(B3:B254) 
+   
+2. What is the correlation between daily continuously compounded returns for Dow Chemical and for the S&P 500 Index
+   - =CORREL(B3:B254,D3:D254)
+
+3.  On what day in 2010 did Dow Chemical returns out perform S&P 500 Index returns the most?
+   - Sort the value desc: 10-05-2010
+  
+4. How many days out of the 252 trading days in 2010 did Dow outperform Dupont?
+  - ={SUM(IF(B3:B254>C3:C254,1,0))}: 124 
+ 
+5. What was the fifth-worst performing day for the S&P 500 Index in 2010?
+  - Sort the value asc: 29-06-2010
+  
+*  A “Sharpe Ratio” is a way of measuring the performance of an investment asset that takes into account both returns and the standard deviation (also called the volatility) of returns over time. A stock’s Sharpe ratio is the difference between its returns and the return of a risk-free investment, such as a government bond, divided by the standard deviation of returns of the asset. 
+6. Assume a risk-free asset returns 2% per year, and the standard deviation of returns of Dupont stock is 20%.  What is the Sharpe Ratio for Dupont stock for 2010?
+  - =(SUM(C3:C254)-0.02)/0.2: 0.83
+ 
+* Backgroud information: 
+ Assume that at a particular gas station, the quantity of automobile fuel sold in a week is a function of the fuel’s retail price. The quantity of fuel sold in a week (in gallons) = (1,000 – 300x), where x is the price in dollars per gallon. The function f(x) for revenues from weekly sales, in dollars, will equal x*(1000 – 300x) = 1000x – 300x^2.
+7. What is the price x that maximizes weekly revenues?
+ - Using Solver: 1.67 gallons and maximal weekly revenue is 833.3 USD
+ 
+8. What is Beta for Dow Chemical? Give the answer rounded two digits to the right of the decimal place.
+ - Plot a scatterplot graph and show the trendline: Beta = 1.66
+ 
+
+
