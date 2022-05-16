@@ -1,0 +1,63 @@
+1. The portion of test outcomes that are True Negatives plus the portion that are False Negatives must equal:
+   - One, minus the classification incidence/test incidence
+  
+* Use the Cancer Diagnosis Spreadsheet to answer: This spreadsheet gives 10,000 pairs of scores – the level of a (fictional) cancer diagnostic protein in Column A - along with the actual condition: 1 = cancer, 0= no cancer in Column C. 
+2. Change the cost per False Negative classification to $20,000. Change the cost per False Positive classification to $1,000. What is the new minimum cost per event/cost per test 
+   - $183.3 
+  
+3. What is the lowest level of protein that should be classified "Positive" to achieve the minimum cost per test at the new costs per error given above? 
+   - 18204.498
+ 
+4. Can a change in classification threshold change a diagnostic test's True Positive Rate? 
+   - Yes. 
+ 
+5. Keep the cost per False Positive test set at $500. Use MS Solver to determine the maximum cost per False Negative test that permits an average cost per test of $100.
+   - $ 12,262
+
+6. Assumea cost of $15,000 per False Negative  (FN) and $100 per False Positive (FP). What is the minimumaverage cost per test? 
+   - $ 25.98
+
+7. If, instead of assuming a cost $15,000 per FN and $100 per FP, the costs are assumed to be $7,500 per FN and $50 per FP, what changes?  
+   - The minimum cost per test. 
+  
+6. "Condition Incidence" is the portion of a population that actually has the Condition being studied. Can a change in threshold change the Condition incidence? Use logic - no need to calculate any numbers.
+   - No.
+ 
+7. Does the change in threshold change the test’s “classification incidence” (also called “test incidence”)?
+   -Yes. 
+ 
+8. Does the change in threshold change the test's Area under the ROC Curve? 
+   - No. 
+
+* Use the Forecasting Soldier Performance Spreadsheet to answer this question:
+8. What is the False Positive Rate if we use the sum of standardized height and standardized weight as the score; and set a threshold at -1.28?
+   - At the threshold given, there are 5 TPs, 1 FN, 4FPs and 2TNs. Six soldiers have condition negative, so the FP rate would be 4/6 or 2/3 = 0.67
+
+9. Rank the outcomes using soldier’s age as the score, with the oldest at the top. A threshold of 24 years represents what point on the ROC Curve?
+   - TP = 2, FP = 4, TN = 2, FN = 4: FP rate = 4/6 = 0.67 ; TP rate = 2/6 = 0. 33
+   
+10. A test for “driving while intoxicated” was given 100 times. 20 people tested were actually intoxicated, and 10 people were mis-classified as intoxicated. What would the False Positive rate be?
+   - = 10/(100-20) = 12.5%
+
+11. A population tested for “driving while intoxicated” has a Condition incidence of 20%. If the test has a true positive rate of 70% and a false positive rate of 10%, what is the test’s Positive Predictive Value (PPV)?
+    - (0.7 * 0.2) /[(1-0.2) *0.1+(0.7 *0.2)] = 0.64
+    
+12. If a fire alarm malfunctions and fails to go off when there actually is a fire, that is a: 
+    - + Negative: false negative 
+
+13. If the “classification incidence/test incidence” is 10% for the whole population, and the true “condition incidence” is 12% for the whole population, the True Positive rate:
+    - must be 100% 
+ 
+14. In general, increasing the cost per FN while keeping the cost per FP constant will cause the cost-minimizing threshold score to:
+    - Decrease.
+    
+* Use Bombers and Seagulls Spreadsheet to answer questions:
+15. Modify the spreadsheet data so that there are 4 bombers instead of 3, and 16 seagulls instead of 17, by changing the actual condition for the radar score of 66 from a 0 to a 1 in cell D43.
+    - 0.75
+    
+16. Assuming the costs for classification errors are 5 million pounds per FN and 4 million pounds per FP, how much does changing the value at Cell D43 from 0 to 1 change the minimum cost per event? 
+   - Increases by 250,000 pounds
+ 
+17. Change the cost per FN to 50 million pounds. How does changing the data in cell D43 from a 0 to a 1 change the cost-minimizing threshold? 
+   - Decreases it from 75 to 66. 
+ 
