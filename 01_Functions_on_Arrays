@@ -1,0 +1,5 @@
+# Background Information:  
+You are provided below with an Excel Spreadsheet that gives one year’s daily continually compounded returns for two chemical company stocks, Dow and Dupont, and the S&P 500, a weighted index of 500 large company stocks.
+
+#Problem Information:  
+1. Daily continuously compounded returns can be summed to obtain returns over longer time intervals. Sum the daily returns to calculate annual continuously compounded returns for 2010.  Give each result in percent, rounded to two digits to the right of the decimal place – for example, 11.76%.
