@@ -1,0 +1,26 @@
+1. Given a Gaussian distribution with mean of 2 and standard deviation = 4, what is the cumulative probability at 2?
+   - 0.50 
+  
+2. True/False: In order to get a sample mean that follows a Gaussian distribution, the population distribution must also be a Gaussian distribution. 
+   - False. 
+   - The Central Limit Theorem explains that sample means will have a Gaussian distribution even if the underlying population from which they are drawn does not.
+   
+3. Assume a random variable X that follows a Gaussian distribution with mean = 10 and variance = 3, and a random variable Y, such that Y = 2X + 3. What is random variable Y’s variance?
+   - 12
+   -  The algebra of Gaussians is that when multiplying a Gaussian with variance x by a constant "beta" - here 2- the new variance is beta-squared = 4 times the old variance.
+   
+4. Consider the example given in the Markowitz Portfolio Optimization Spreadsheet. Suppose the returns, volatility of returns, and correlation of returns of Stock 1 and Stock 2 in the spreadsheet all remain constant, and the risk-free rate increases. 
+   - No. 
+   - The return (y axis) and standard deviation of returns (x axis) of the combined assets remains constant, so that (x,y) point does not change. However, point (0, risk-free rate) that indicates the risk-free rate moves higher up the y axis. The slope of the line connecting them must decrease, not increase. 
+
+5. Given a data set of 10 elements: {23, 17, 54, 32, 76, 88, 31, 9, 47, 26}. What is the z-score of the first element? 
+   - -0.71
+   
+6. Supposebody weight for a large group of athletes follows an approximately Gaussian distribution with a mean of 155 pounds and standard deviation of 20 pounds. What percentage of athletes would be expected to weigh over 180 pounds? 
+   - Value = 180, Mean = 155, Std.dev =20, Z-score = (180-155)/20 = 1.25, P (x>180) =1-NORMSDIST(1.25) : 10.6% 
+ 
+7. Given a random variable X that follows a Gaussian Distribution with mean = 20 and standard deviation = 15; and a random variable Y that follows a Gaussian Distribution with mean = 10 and standard deviation = 10. Assume that X and Y are independent. What is the standard deviation of random variable Z = X +Y?
+   - Sigma(X) = 15, Sigma(Y) =10, Sigma(Z) = Sigma(X+Y) = SQRT((Sigma(X))^2+(Sigma(Y))^2) = sqrt(100 + 225) = 18.3% 
+
+8. Use the Markowitz Portfolio Optimization Spreadsheet. Keep the expected returns, volatility of returns, and risk-free rate constant. Change the correlation between the two stock’s returns to R = -0.5. What is the new optimum Sharpe Ratio?
+   - 2.24
